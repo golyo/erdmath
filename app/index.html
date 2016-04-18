@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Érdi Matematikai Tehetségekért</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="styles/modern-business.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+
+  </head>
+  <body ng-app="erdMat">
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+    <nav id="nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" ui-sref="home">ÉrdMat</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li ui-sref-active="active">
+              <a ui-sref="about">Bemutatkozás</a>
+            </li>
+            <li ui-sref-active="active">
+              <a ui-sref="program">Programok</a>
+            </li>
+            <li ui-sref-active="partners">
+              <a ui-sref="partners">Partnerek</a>
+            </li>
+            <li class="dropdown" uib-dropdown>
+              <a href class="dropdown-toggle" uib-dropdown-toggle id="potfolio-dropdown">Portfolio <b class="caret"></b></a>
+              <ul uib-dropdown-menu class="dropdown-menu" aria-labelledby="potfolio-dropdown">
+                <li>
+                  <a ui-sref="home">1 Column Portfolio</a>
+                </li>
+                <li>
+                  <a ui-sref="home">2 Column Portfolio</a>
+                </li>
+                <li>
+                  <a ui-sref="home">3 Column Portfolio</a>
+                </li>
+                <li>
+                  <a ui-sref="home">4 Column Portfolio</a>
+                </li>
+                <li>
+                  <a ui-sref="home">Single Portfolio Item</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+      <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+    <div ui-view></div>
+
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-animate/angular-animate.js"></script>
+    <script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src='lib/lodash/lodash.js'></script>
+    <script src='lib/angular-simple-logger/dist/angular-simple-logger.js'></script>
+    <script src='lib/angular-google-maps/dist/angular-google-maps.js'></script>
+
+
+    <!-- your app's js -->
+    <!-- build:js scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers.js"></script>
+    <script src="scripts/services.js"></script>
+    <script src="scripts/configuration.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>

@@ -1,0 +1,17 @@
+node_modules
+app/lib
+coverage
+platforms
+plugins
+resources
+hooks
+.idea
+.temp
+.sass-cache
+*.swp
+*.iml
+*.swo
+*.log
+*.DS_Store
+
+app/scripts/configuration.js
