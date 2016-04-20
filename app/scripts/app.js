@@ -9,10 +9,9 @@ angular.module('erdMat', ['ui.router', 'pascalprecht.translate', 'ngSanitize', '
 
 .run(function($rootScope, $translate) {
 	$rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
-		console.log('$stateChangeSuccess on ' + toState.name);
+		//console.log('$stateChangeSuccess on ' + toState.name);
 	});
 	$rootScope.changeLanguage = function(langKey) {
-	    console.log('Change language ' + langKey);
     	$translate.use(langKey);
 	};
 })
@@ -20,7 +19,7 @@ angular.module('erdMat', ['ui.router', 'pascalprecht.translate', 'ngSanitize', '
 .config(function ($translateProvider) {
     $translateProvider.useSanitizeValueStrategy('escape');
     $translateProvider.useStaticFilesLoader({
-        prefix: '/resources/locale-',
+        prefix: 'resources/locale-',
         suffix: '.json'
     });
     $translateProvider.preferredLanguage('hu');
