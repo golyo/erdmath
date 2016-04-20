@@ -1,0 +1,51 @@
+{
+  "menu" : {
+    "home" : "ÉrdMat",
+    "introduction" : "Bemutatkozás",
+    "programs" : "Programok",
+    "partners" : "Partnerek",
+    "portfolio" : "Portfólió"
+  },
+  "home" : {
+    "title" : "Érdi Matematikai Tehetségekért Alapítvány",
+    "carousel" : {
+      "0" : {
+        "head" : "Figyu!",
+        "text" : "Ha hozzánk jársz jó lesz !"
+      },
+      "1" : {
+        "head" : "Mert...",
+        "text" : "Ha nem hozzánk jársz, akkor szar lesz."
+      },
+      "2" : {
+        "head" : "Ugye ?? ",
+        "text" : "Én szóltam !"
+      }
+    },
+    "access" : {
+      "title" : "Elérhetőség",
+      "address" : {
+        "title" : "Cím",
+        "value" : "2030 Érd Platánfa utca 19."
+      },
+      "phone" : "Telefonszám",
+      "email" : {
+        "label" : "E-mail",
+        "subject" : "érdeklődés"
+      },
+      "web" : "Web",
+      "map" : "Térkép"
+    },
+    "teaching" : {
+      "title" : "Az oktatásról",
+      "text"  : "Itt olvasható a kapcsolódó szöveg eleje, a szöveg végén egy"
+    },
+    "results" : {
+      "title" : "Eredményeink",
+      "text"  : "Itt olvasható a kapcsolódó szöveg eleje, a szöveg végén egy..."
+    }
+  },
+  "button" : {
+    "forward" : "Tovább"
+  }
+}

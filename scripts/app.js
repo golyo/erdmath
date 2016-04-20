@@ -5,12 +5,25 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('erdMat', ['ui.router', 'uiGmapgoogle-maps', 'erdMat.controllers', 'erdMat.services'])
+angular.module('erdMat', ['ui.router', 'pascalprecht.translate', 'ngSanitize', 'uiGmapgoogle-maps', 'erdMat.controllers', 'erdMat.services'])
 
-.run(function($rootScope) {
+.run(function($rootScope, $translate) {
 	$rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
 		console.log('$stateChangeSuccess on ' + toState.name);
 	});
+	$rootScope.changeLanguage = function(langKey) {
+	    console.log('Change language ' + langKey);
+    	$translate.use(langKey);
+	};
+})
+
+.config(function ($translateProvider) {
+    $translateProvider.useSanitizeValueStrategy('escape');
+    $translateProvider.useStaticFilesLoader({
+        prefix: '/resources/locale-',
+        suffix: '.json'
+    });
+    $translateProvider.preferredLanguage('hu');
 })
 
 .config(function($stateProvider, $urlRouterProvider) {

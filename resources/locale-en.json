@@ -1,0 +1,51 @@
+{
+  "menu" : {
+    "home" : "ÉrdMat",
+    "introduction" : "Introduction",
+    "programs" : "Programs",
+    "partners" : "Partners",
+    "portfolio" : "Portfolio"
+  },
+  "home" : {
+    "title" : "Talents of Maths Foundation in Érd",
+    "carousel" : {
+      "0" : {
+        "head" : "Hello!",
+        "text" : "If you come will be good !"
+      },
+      "1" : {
+        "head" : "Because...",
+        "text" : "If you don't come it will be sucks."
+      },
+      "2" : {
+        "head" : "Isn't it ?? ",
+        "text" : "I told you !"
+      }
+    },
+    "access" : {
+      "title" : "Access",
+      "address" : {
+        "title" : "Address",
+        "value" : "2030, Platánfa street 19., Érd"
+      },
+      "phone" : "Phone number",
+      "email" : {
+        "label" : "E-mail",
+        "subject" : "interest"
+      },
+      "web" : "Web",
+      "map" : "Map"
+    },
+    "teaching" : {
+      "title" : "About teaching",
+      "text"  : "Here is the text ..."
+    },
+    "results" : {
+      "title" : "Our Results",
+      "text"  : "Here is an other text..."
+    }
+  },
+  "button" : {
+    "forward" : "Results"
+  }
+}
