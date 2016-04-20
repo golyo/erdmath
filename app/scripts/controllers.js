@@ -14,6 +14,9 @@ angular.module('erdMat.controllers', ['ngAnimate', 'ui.bootstrap'])
     $scope.partners = PartnerSrv.getPartners();
 })
 
+.controller('ProgramCtrl', function($rootScope, $scope, $sce) {
+})
+
 .controller("HomeCtrl", function($scope, HomeSrv) {
     $scope.slide = HomeSrv.getSlide();
     $scope.data = HomeSrv.getData();

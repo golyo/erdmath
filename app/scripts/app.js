@@ -7,13 +7,16 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('erdMat', ['ui.router', 'pascalprecht.translate', 'ngSanitize', 'uiGmapgoogle-maps', 'erdMat.controllers', 'erdMat.services'])
 
-.run(function($rootScope, $translate) {
+.run(function($rootScope, $translate, $sce) {
+    var calendarSrc = "https://calendar.google.com/calendar/embed?mode=AGENDA&showTitle=0&mode=WEEK&height=600&wkst=2&bgcolor=%23ffffff&src=bnk47sia9hbb7p0072ckn5s8co%40group.calendar.google.com&color=%232952A3&ctz=Europe%2FBudapest";
 	$rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
 		//console.log('$stateChangeSuccess on ' + toState.name);
 	});
 	$rootScope.changeLanguage = function(langKey) {
     	$translate.use(langKey);
+    	$rootScope.calendarSrc = $sce.trustAsResourceUrl(calendarSrc + "&hl=" + langKey);
 	};
+	$rootScope.calendarSrc = $sce.trustAsResourceUrl(calendarSrc + "&hl=hu");
 })
 
 .config(function ($translateProvider) {
@@ -62,7 +65,8 @@ angular.module('erdMat', ['ui.router', 'pascalprecht.translate', 'ngSanitize', '
 
       .state('program', {
         url: '/program',
-        templateUrl: 'templates/program.html'
+        templateUrl: 'templates/program.html',
+        controller: 'ProgramCtrl'
       });
 
 
@@ -70,6 +74,7 @@ angular.module('erdMat', ['ui.router', 'pascalprecht.translate', 'ngSanitize', '
   $urlRouterProvider.otherwise('/home');
 
 })
+
 /*
 .config(function(uiGmapGoogleMapApiProvider) {
     uiGmapGoogleMapApiProvider.configure({
