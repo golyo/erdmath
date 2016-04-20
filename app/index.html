@@ -10,65 +10,11 @@
     <link href="styles/modern-business.css" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet">
 
-  </head>
-  <body ng-app="erdMat">
-    <!--
-      The nav bar that will be updated as we navigate between views.
-    -->
-    <nav id="nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" ui-sref="home">ÉrdMat</a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li ui-sref-active="active">
-              <a ui-sref="about">Bemutatkozás</a>
-            </li>
-            <li ui-sref-active="active">
-              <a ui-sref="program">Programok</a>
-            </li>
-            <li ui-sref-active="partners">
-              <a ui-sref="partners">Partnerek</a>
-            </li>
-            <li class="dropdown" uib-dropdown>
-              <a href class="dropdown-toggle" uib-dropdown-toggle id="potfolio-dropdown">Portfolio <b class="caret"></b></a>
-              <ul uib-dropdown-menu class="dropdown-menu" aria-labelledby="potfolio-dropdown">
-                <li>
-                  <a ui-sref="home">1 Column Portfolio</a>
-                </li>
-                <li>
-                  <a ui-sref="home">2 Column Portfolio</a>
-                </li>
-                <li>
-                  <a ui-sref="home">3 Column Portfolio</a>
-                </li>
-                <li>
-                  <a ui-sref="home">4 Column Portfolio</a>
-                </li>
-                <li>
-                  <a ui-sref="home">Single Portfolio Item</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container -->
-    </nav>
-      <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
-    <div ui-view></div>
 
     <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-translate/angular-translate.js"></script>
+    <script src="lib/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+    <script src="lib/angular-sanitize/angular-sanitize.js"></script>
     <script src="lib/angular-animate/angular-animate.js"></script>
     <script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
@@ -84,6 +30,57 @@
     <script src="scripts/services.js"></script>
     <script src="scripts/configuration.js"></script>
     <!-- endbuild -->
+
+  </head>
+  <body ng-app="erdMat">
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+    <nav id="nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" ui-sref="home">{{'menu.home' | translate}}</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-left">
+            <li class="dropdown" uib-dropdown>
+              <a href class="dropdown-toggle" uib-dropdown-toggle id="potfolio-dropdown">Languages<b class="caret"></b></a>
+              <ul uib-dropdown-menu class="dropdown-menu" aria-labelledby="potfolio-dropdown">
+                <li><a href="#" ng-click="changeLanguage('en')">English</a></li>
+                <li><a href="#" ng-click="changeLanguage('hu')">Magyar</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li ui-sref-active="active"><a ui-sref="about">{{'menu.introduction' | translate}}</a></li>
+            <li ui-sref-active="active"><a ui-sref="program">{{'menu.programs' | translate}}</a></li>
+            <li ui-sref-active="partners"><a ui-sref="partners">{{'menu.partners' | translate}}</a></li>
+            <li class="dropdown" uib-dropdown>
+              <a href class="dropdown-toggle" uib-dropdown-toggle id="potfolio-dropdown">{{'menu.portfolio' | translate}} <b class="caret"></b></a>
+              <ul uib-dropdown-menu class="dropdown-menu" aria-labelledby="potfolio-dropdown">
+                <li><a ui-sref="home">1 Column Portfolio</a></li>
+                <li><a ui-sref="home">2 Column Portfolio</a></li>
+                <li><a ui-sref="home">3 Column Portfolio</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+      <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+    <div ui-view></div>
+
 
   </body>
 </html>

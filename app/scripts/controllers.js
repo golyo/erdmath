@@ -15,6 +15,7 @@ angular.module('erdMat.controllers', ['ngAnimate', 'ui.bootstrap'])
 
 .controller("HomeCtrl", function($scope, HomeSrv) {
     $scope.slide = HomeSrv.getSlide();
+    $scope.data = HomeSrv.getData();
 });
 
 

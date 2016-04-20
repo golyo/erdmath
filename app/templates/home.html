@@ -4,8 +4,8 @@
             <uib-slide ng-repeat="slide in slide.slides track by $index" index="$index">
                 <img ng-src="{{slide.image}}" style="margin:auto;">
                 <div class="carousel-caption">
-                    <h4>{{slide.header}}</h4>
-                    <p>{{slide.text}}</p>
+                    <h4>{{('home.carousel.' + $index + '.head') | translate}}</h4>
+                    <p>{{('home.carousel.' + $index + '.text') | translate}}</p>
                 </div>
             </uib-slide>
         </uib-carousel>
@@ -18,44 +18,44 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
-                    Érdi Matematikai Tehetségekért Alapítvány
+                    {{'home.title' | translate}}
                 </h1>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="glyphicon glyphicon-envelope"></i> Elérhetőség</h4>
+                        <h4><i class="glyphicon glyphicon-envelope"></i> {{'home.access.title' | translate}}</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Cím: 2030 Érd Platánfa utca 19.</p>
-                        <p>Telefonszám: 06/30&shy;-5171506</p>
-                        <p>E-mail:
-                            <a href="mailto:erdmat@erdmat.hu?Subject=érdeklődés" target="_top">erdmat@erdmat.hu</a>
+                        <p>{{'home.access.address.title' | translate}}: {{'home.access.address.value' | translate}}</p>
+                        <p>{{'home.access.phone' | translate}}: {{data.phone}}</p>
+                        <p>{{'home.access.email.label' | translate}}:
+                            <a href="mailto:erdmat@erdmat.hu?Subject={{'home.access.email.subject' | translate}}" target="_top">{{data.email}}</a>
                         </p>
-                        <p>web: <a href="#home">www.erdmat.hu</a></p>
-                        <a ui-sref="map" class="btn btn-default">Térkép</a>
+                        <p>{{'home.access.web' | translate}}: <a ui-sref="home">{{data.homePage}}</a></p>
+                        <a ui-sref="map" class="btn btn-default">{{'home.access.map' | translate}}</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="glyphicon glyphicon-book"></i> Az oktatásról</h4>
+                        <h4><i class="glyphicon glyphicon-book"></i> {{'home.teaching.title' | translate}}</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Itt olvasható a kapcsolódó szöveg eleje, a szöveg végén egy</p>
-                        <p><a href="#" class="btn btn-default">Tovább</a></p>
+                        <p>{{'home.teaching.text' | translate}}</p>
+                        <p><a href="#" class="btn btn-default">{{'button.forward' | translate}}</a></p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4><i class="glyphicon glyphicon-thumbs-up"></i> Eredményeink</h4>
+                        <h4><i class="glyphicon glyphicon-thumbs-up"></i> {{'home.results.title' | translate}}</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Itt olvasható a kapcsolódó szöveg eleje, a szöveg végén egy</p>
-                        <p><a href="#" class="btn btn-default">Tovább</a></p>
+                        <p>{{'home.results.text' | translate}}</p>
+                        <p><a href="#" class="btn btn-default">{{'button.forward' | translate}}</a></p>
                     </div>
                 </div>
             </div>

@@ -11,22 +11,16 @@ angular.module('erdMat.services', [])
             {image: 'http://lorempixel.com/400/200/sports', header:"Ugye? ", text:'Én szóltam'}
         ]
     };
-    return {
-        getSlide: function() {
-            return slide;
-        }
-    };
-})
-
-.factory('DataSrv', function() {
     var data = {
-        address: "2030 Érd Platánfa utca 19.",
-        phone: "06/30­-5171506",
+        phone: "+36/30­5171506",
         email: "erdmat@erdmat.hu",
         homePage: "www.erdmat.hu",
         coords: {latitude: 47.4113, longitude: 18.89064}
     };
     return {
+        getSlide: function() {
+            return slide;
+        },
         getData: function() {
             return data;
         }
