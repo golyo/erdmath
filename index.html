@@ -46,30 +46,20 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" ui-sref="home">{{'menu.home' | translate}}</a>
+          <a class="navbar-brand" ui-sref="home" translate="{{'menu.home'}}"></a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-left">
-            <li class="dropdown" uib-dropdown>
-              <a href class="dropdown-toggle" uib-dropdown-toggle id="potfolio-dropdown">Languages<b class="caret"></b></a>
-              <ul uib-dropdown-menu class="dropdown-menu" aria-labelledby="potfolio-dropdown">
-                <li><a href="#" ng-click="changeLanguage('en')">English</a></li>
-                <li><a href="#" ng-click="changeLanguage('hu')">Magyar</a></li>
-              </ul>
-            </li>
-          </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li ui-sref-active="active"><a ui-sref="about">{{'menu.introduction' | translate}}</a></li>
-            <li ui-sref-active="active"><a ui-sref="program">{{'menu.programs' | translate}}</a></li>
-            <li ui-sref-active="partners"><a ui-sref="partners">{{'menu.partners' | translate}}</a></li>
+            <li ui-sref-active="active"><a ui-sref="about" translate="{{'menu.about'}}"></a></li>
+            <li ui-sref-active="active"><a ui-sref="program" translate="{{'menu.programs'}}"></a></li>
+            <li ui-sref-active="partners"><a ui-sref="partners" translate="{{'menu.partners'}}"></a></li>
             <li class="dropdown" uib-dropdown>
-              <a href class="dropdown-toggle" uib-dropdown-toggle id="potfolio-dropdown">{{'menu.portfolio' | translate}} <b class="caret"></b></a>
+              <a href class="dropdown-toggle" uib-dropdown-toggle id="potfolio-dropdown"><span translate="{{'menu.others'}}"></span> <b class="caret"></b></a>
               <ul uib-dropdown-menu class="dropdown-menu" aria-labelledby="potfolio-dropdown">
-                <li><a ui-sref="home">1 Column Portfolio</a></li>
-                <li><a ui-sref="home">2 Column Portfolio</a></li>
-                <li><a ui-sref="home">3 Column Portfolio</a></li>
+                <li><a ui-sref="teaching" translate="{{'menu.teaching'}}"></a></li>
+                <li><a ui-sref="results" translate="{{'menu.results'}}"></a></li>
               </ul>
             </li>
           </ul>
@@ -81,6 +71,17 @@
       <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
     <div ui-view></div>
 
+    <!-- Footer -->
+    <footer class="navbar navbar-inverse">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li><a>Copyright © Your Website 2014</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a>Designed by Golyo</a></li>
+        </ul>
+      </div>
+    </footer>
 
   </body>
 </html>

@@ -4,13 +4,18 @@ angular.module('erdMat.controllers', ['ngAnimate', 'ui.bootstrap'])
 
 })
 
-.controller('MapCtrl', function($scope) {
-    $scope.map = { center: {latitude: 47.4089736, longitude: 18.8892324}, zoom: 14 };
-    $scope.marker = {coords: {latitude: 47.4113, longitude: 18.89064}, markerId:'mid'}
+.controller('MapCtrl', function($scope, HomeSrv) {
+    var coordinates = HomeSrv.getData().coords;
+    $scope.marker = {coords: coordinates, markerId:'mid'}
+    $scope.map = { center: {latitude: coordinates.latitude, longitude: coordinates.longitude}, zoom: 14 };
 })
 
 .controller('PartnersCtrl', function($scope, PartnerSrv) {
     $scope.partners = PartnerSrv.getPartners();
+    $scope.sponsors = PartnerSrv.getSponsors();
+})
+
+.controller('ProgramCtrl', function($rootScope, $scope, $sce) {
 })
 
 .controller("HomeCtrl", function($scope, HomeSrv) {
