@@ -3,7 +3,6 @@ app/lib
 coverage
 platforms
 plugins
-resources
 hooks
 .idea
 .temp
