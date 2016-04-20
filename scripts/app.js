@@ -20,7 +20,7 @@ angular.module('erdMat', ['ui.router', 'pascalprecht.translate', 'ngSanitize', '
 .config(function ($translateProvider) {
     $translateProvider.useSanitizeValueStrategy('escape');
     $translateProvider.useStaticFilesLoader({
-        prefix: '../resources/locale-',
+        prefix: 'resources/locale-',
         suffix: '.json'
     });
     $translateProvider.preferredLanguage('hu');
