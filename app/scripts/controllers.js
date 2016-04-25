@@ -12,6 +12,7 @@ angular.module('erdMat.controllers', ['ngAnimate', 'ui.bootstrap'])
 
 .controller('PartnersCtrl', function($scope, PartnerSrv) {
     $scope.partners = PartnerSrv.getPartners();
+    $scope.sponsors = PartnerSrv.getSponsors();
 })
 
 .controller('ProgramCtrl', function($rootScope, $scope, $sce) {

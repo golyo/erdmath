@@ -1,25 +1,29 @@
 {
   "menu" : {
     "home" : "ÉrdMat",
-    "introduction" : "Bemutatkozás",
+    "about" : "Bemutatkozás",
     "programs" : "Programok",
     "partners" : "Partnerek",
-    "portfolio" : "Portfólió"
+    "others" : "Egyebek"
   },
   "home" : {
     "title" : "Érdi Matematikai Tehetségekért Alapítvány",
     "carousel" : {
       "0" : {
-        "head" : "Figyu!",
-        "text" : "Ha hozzánk jársz jó lesz !"
+        "head" : "f",
+        "text" : ""
       },
       "1" : {
-        "head" : "Mert...",
-        "text" : "Ha nem hozzánk jársz, akkor szar lesz."
+        "head" : " f",
+        "text" : "Ahol inspiráló környezetben,"
       },
       "2" : {
-        "head" : "Ugye ?? ",
-        "text" : "Én szóltam !"
+        "head" : " f",
+        "text" : "kis létszámú csoportban, de együtt gondolkodva"
+      },
+      "3" : {
+        "head" : " f",
+        "text" : "fedezhetitek fel a matematika világát."
       }
     },
     "access" : {
@@ -38,13 +42,37 @@
     },
     "teaching" : {
       "title" : "Az oktatásról",
-      "text"  : "Itt olvasható a kapcsolódó szöveg eleje, a szöveg végén egy"
+      "text"  : "Az Érdmat Alapítvány legfontosabb célja a matematika iránt érdeklődő általános iskolás tanulók tehetségének, matematikai képességeinek fejlesztése."
     },
     "results" : {
       "title" : "Eredményeink",
-      "text"  : "Itt olvasható a kapcsolódó szöveg eleje, a szöveg végén egy..."
+      "text"  : "Az Érdi Matematikai Tehetségekért Alapítvány 2016-ban alakult azzal a céllal, hogy minél több érdi és Érd környéki tanuló matematikai képességeinek és ezáltal versenyeredményeinek fejlődését segítse elő. "
     }
   },
+  "about" : {
+    "title" : "Bemutatkozás",
+    "preSubTitle" : "az",
+    "subTitle" : "<small>Az</small> Érdi Matematikai Tehetségekért (Érdmat) Alapítvány",
+    "paragraph1" : "azzal a céllal jött létre 2016 tavaszán, hogy támogassa a matematika iránt érdeklődést mutató érdi és Érd környéki általános iskolás korú tanulók tehetségének kibontakozását.",
+    "paragraph2" : "Az alapítvány az érdi és Érd környéki általános iskolákkal, valamint a matematika tehetséggondozásban érintett egyéb szervezetekkel együttműködve segíti a gyerekek versenyekre való felkészülését, versenyeken és tehetséggondozó foglalkozásokon, táborokban való részvételét. Az alapítvány további célja a tehetségek fejlesztése érdekében a felkészítő tanárok számára módszertani és anyagi segítség nyújtása.",
+    "paragraph3" : "Az alapítvány fő tevékenységként a tanév rendjéhez igazodva, <b>heti rendszerességgel szervez tehetséggondozó foglalkozásokat a tanulók számára</b>, amit éves szinten a tanároknak szóló konferenciák, bemutatók, továbbképzések is kiegészítenek.",
+    "paragraph4" : "Az alapítvány a célok eléréséhez szükséges forrásokat a szülői támogatások mellett pályázati forrásokból, egyéb támogatói felajánlásokból és a fő tevékenységet kiegészítő kutatás-fejlesztési tevékenységek bevételeiből kívánja előteremteni.",
+    "paragraph5" : "Alapítványunk közvetlen támogatásának legegyszerűbb módja az alapítvány számlaszámára történő utalás:<br/>A kedvezményezett neve: Érdi Matematika Tehetségekért Alapítvány<br/>Bankszámlaszáma: …..",
+    "otherAccess": "Egyéb elérhetőségek",
+    "members": "A kuratórium tagjai",
+    "sponsors": "Támogatóink"
+  },
+  "partners" : {
+    "title" : "Partnerek",
+    "0" : {"head" : "A Gondolkodás Öröme Alapítvány", "text" : "Az alapítvány a matematikai tehetségek határon inneni és túli felkutatását, képességeik fejlesztését tűzte ki célul. A célt az alapító, a hazai matematika tehetséggondozás kiemelkedő alakja, Pósa Lajos módszerének alkalmazásával, az általa 1988-ban elindított hétvégi tábori mozgalom fenntartásával és kiterjesztésével kívánják elérni az alapítvány szakemberei."},
+    "1" : {"head" : "Zalai Matematikai Tehetségekért Alapítvány", "text" : "A Zalamat Alapítvány hazai és külföldi tehetséggondozó táborok és különböző matematika versenyek, köztük a nemzetközi Kenguru verseny szervezésével segíti a tanulók matematikai képességeinek kibontakozását. Az alapítvány tevékenysége az említetteken túl kiterjed a felkészítő tanárok továbbképzésére, valamint a matematikai tehetséggondozást segítő szakmai kiadványok gondozására is."},
+    "2" : {"head" : "Erdős Pál Matematikai Tehetséggondozó Iskola", "text" : "A veszprémi Pannon Egyetem által fenntartott Erdős Iskola évenként 4-5, intenzív, hétvégi matematika tehetséggondozó kurzussal segíti a matematika iránt érdeklődő, tehetséges tanulók képességeinek fejlődését. Az iskola tanárai az ország legelismertebb matematika tehetséggondozó pedagógusai, akik változatos pedagógiai módszerekkel végzik az értelmi képesség, a kreativitás és a feladat iránti elkötelezettség (szorgalom, kitartás) fejlesztését."}
+  },
+  "sponsors" : {
+    "title" : "Támogatók",
+    "0" : {"head" : "1. Morpho-communications", "text" : "Sokan sokfélék vagyunk: bölcsészek, pedagógusok, közgazdászok, politológusok, marketingesek. Ami közös bennünk: szenvedélyünk a kommunikáció. Ezért lettünk mindannyian a technológia és a fejlődés iránt elkötelezett kommunikációs szakemberek, és most egy csapatot alkotunk. Neked is segítünk megmutatni és megértetni történetedet mindazokkal, akik fontosak vállalatod számára. Közös munkánk eredményeként pedig kialakul irántad az a bizalom, ami nélkülözhetetlen üzleti és személyes sikeredhez."}
+  },
+
   "button" : {
     "forward" : "Tovább"
   }

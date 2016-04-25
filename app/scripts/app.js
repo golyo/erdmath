@@ -20,7 +20,7 @@ angular.module('erdMat', ['ui.router', 'pascalprecht.translate', 'ngSanitize', '
 })
 
 .config(function ($translateProvider) {
-    $translateProvider.useSanitizeValueStrategy('escape');
+    $translateProvider.useSanitizeValueStrategy('sanitize');
     $translateProvider.useStaticFilesLoader({
         prefix: 'resources/locale-',
         suffix: '.json'
@@ -67,6 +67,11 @@ angular.module('erdMat', ['ui.router', 'pascalprecht.translate', 'ngSanitize', '
         url: '/program',
         templateUrl: 'templates/program.html',
         controller: 'ProgramCtrl'
+      })
+
+      .state('teaching', {
+        url: '/teaching',
+        templateUrl: 'templates/teaching.html'
       });
 
 

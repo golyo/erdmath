@@ -6,9 +6,10 @@ angular.module('erdMat.services', [])
         noWrapSlides : false,
         active : 0,
         slides : [
-            {image: 'http://lorempixel.com/602/200/', header:"Figyu!", text:'Ha hozzánk jársz jó lesz !'},
-            {image: 'http://lorempixel.com/400/200/food', header:"Mert..", text:'Ha nem, hozzánk jársz, akkor szar lesz !'},
-            {image: 'http://lorempixel.com/400/200/sports', header:"Ugye? ", text:'Én szóltam'}
+            {image: 'images/cim1.jpg'},
+            {image: 'images/cim2.jpg'},
+            {image: 'images/cim3.jpg'},
+            {image: 'images/cim4.jpg'}
         ]
     };
     var data = {
@@ -29,13 +30,19 @@ angular.module('erdMat.services', [])
 
 .factory('PartnerSrv', function() {
     var partners =  [
-        {name:"Alma Kft.", homePage:"https://www.google.hu/webhp?&ie=UTF-8#q=alma"},
-        {name:"Körte BT.", homePage:"https://www.google.hu/webhp?&ie=UTF-8#q=körte"},
-        {name:"Citrom RT", homePage:"https://www.google.hu/webhp?&ie=UTF-8#q=citrom"}
+        {homePage:"http://agondolkodasorome.hu/"},
+        {homePage:"http://www.zalamat.hu/"},
+        {homePage:"http://erdosiskola.mik.uni-pannon.hu/"}
+    ];
+    var sponsors = [
+        {homePage:"http://www.morpho.hu"}
     ];
     return {
         getPartners: function() {
             return partners;
+        },
+        getSponsors: function() {
+            return sponsors;
         }
     };
 })
