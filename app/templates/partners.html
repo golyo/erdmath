@@ -1,4 +1,5 @@
 <div class="container">
+<div class="bg">
     <h1 class="page-header" translate="{{'partners.title'}}"></h1>
     <div class="panel panel-default" ng-repeat="partner in partners" index="$index">
         <div class="panel-heading"><a href="{{partner.homePage}}"><span translate="{{('partners.' + $index + '.head')}}"></span></a></div>
@@ -10,4 +11,5 @@
         <div class="panel-heading"><a href="{{sponsor.homePage}}"><span translate="{{('sponsors.' + $index + '.head')}}"></span></a></div>
         <div class="panel-body"translate="{{('sponsors.' + $index + '.text')}}"></div>
     </div>
+</div>
 </div>

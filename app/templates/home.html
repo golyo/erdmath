@@ -1,18 +1,18 @@
 <header class="carousel slide">
-    <div style="height: 200px">
-        <uib-carousel active="slide.active" interval="slide.myInterval" no-wrap="slide.noWrapSlides">
-            <uib-slide ng-repeat="slide in slide.slides track by $index" index="$index">
-                <img ng-src="{{slide.image}}" style="margin:auto;">
-                <div class="carousel-caption">
-                    <p translate="{{('home.carousel.' + $index + '.text')}}"></p>
-                </div>
-            </uib-slide>
-        </uib-carousel>
+    <div style="height: 200px; ">
+		<uib-carousel active="slide.active" interval="slide.myInterval" no-wrap="slide.noWrapSlides">
+			<uib-slide ng-repeat="slide in slide.slides track by $index" index="$index">
+				<img ng-src="{{slide.image}}" style="margin:auto;">
+				<div class="carousel-caption">
+					<p translate="{{('home.carousel.' + $index + '.text')}}"></p>
+				</div>
+			</uib-slide>
+		</uib-carousel>
     </div>
 </header>
 
     <div class="container">
-
+<div class="bg">
         <!-- Marketing Icons Section -->
         <div class="row">
             <div class="col-lg-12">
@@ -46,7 +46,7 @@
                     </div>
                     <div class="panel-body">
                         <p translate="{{'home.teaching.text'}}"></p>
-                        <p><a href="#" class="btn btn-default" translate="{{'button.forward'}}"></a></p>
+                        <p><a ui-sref="teaching" class="btn btn-default" translate="{{'button.forward'}}"></a></p>
                     </div>
                 </div>
             </div>
@@ -57,9 +57,10 @@
                     </div>
                     <div class="panel-body">
                         <p translate="{{'home.results.text'}}"></p>
-                        <p><a href="#" class="btn btn-default"><span translate="{{'button.forward'}}"></span></a></p>
+                        <p><a ui-sref="results" class="btn btn-default"><span translate="{{'button.forward'}}"></span></a></p>
                     </div>
                 </div>
             </div>
         </div>
+</div>
     </div>

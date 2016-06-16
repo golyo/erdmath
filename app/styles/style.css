@@ -1,2 +1,19 @@
 .angular-google-map-container { height: 400px; }
 
+body {
+  background-image: url("../images/bg.jpg");
+  background-size: 100% 100%;
+  background-repeat: repeat-y;
+}
+
+.carousel, .bg {
+}
+
+.bg {
+    background-color: rgba(255, 255, 255, 0.7);
+	padding: 10px;
+}
+
+.jumbotron {
+	background-color: transparent;
+}
