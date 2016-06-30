@@ -17,3 +17,11 @@ body {
 .jumbotron {
 	background-color: transparent;
 }
+
+.header {
+    color:white;
+    padding: 20px;
+}
+.header h3 {
+    text-align:center;
+}
