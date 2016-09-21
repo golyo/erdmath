@@ -69,6 +69,11 @@ angular.module('erdMat', ['ui.router', 'pascalprecht.translate', 'ngSanitize', '
         controller: 'ProgramCtrl'
       })
 
+      .state('tender', {
+        url: '/tender',
+        templateUrl: 'templates/tender.html'
+      })
+
       .state('teaching', {
         url: '/teaching',
         templateUrl: 'templates/teaching.html'
